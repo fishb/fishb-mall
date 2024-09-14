@@ -1,0 +1,241 @@
+{
+	"pages": [{
+		"path": "pages/login",
+		"style": {
+			"navigationBarTitleText": "登录",
+			//#ifdef H5
+			"navigationStyle": "custom"
+			//#endif
+		}
+	}, {
+		"path": "pages/home/index",
+		"style": {
+			"navigationBarTitleText": "小诺移动端框架",
+			//#ifdef H5
+			"navigationStyle": "custom"
+			//#endif
+		}
+	}, {
+		"path": "pages/work/index",
+		"style": {
+			"navigationBarTitleText": "工作台",
+			//#ifdef H5
+			"navigationStyle": "custom"
+			//#endif
+		}
+	}, {
+		"path": "pages/msg/index",
+		"style": {
+			"navigationBarTitleText": "消息",
+			"onReachBottomDistance": 50,
+			//#ifdef H5
+			"navigationStyle": "custom"
+			//#endif
+		}
+	}, {
+		"path": "pages/msg/detail",
+		"style": {
+			"navigationBarTitleText": "消息详情",
+			//#ifdef H5
+			"navigationStyle": "custom"
+			//#endif
+		}
+	}, {
+		"path": "pages/mine/index",
+		"style": {
+			"navigationBarTitleText": "我的",
+			//#ifdef H5
+			"navigationStyle": "custom"
+			//#endif
+		}
+	}],
+	"subPackages": [{
+		"root": "pages/config",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "环境设置",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "form",
+			"style": {
+				"navigationBarTitleText": "环境管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/common",
+		"pages": [{
+			"path": "webview/index",
+			"style": {
+				"navigationBarTitleText": "浏览网页",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/biz/notice",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "通知公告",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "detail",
+			"style": {
+				"navigationBarTitleText": "通知公告",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	},{
+		"root": "pages/biz/org",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "机构管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "form",
+			"style": {
+				"navigationBarTitleText": "机构管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/biz/position",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "职位管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "form",
+			"style": {
+				"navigationBarTitleText": "职位管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/biz/user",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "用户管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "form",
+			"style": {
+				"navigationBarTitleText": "用户管理",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/mine/info",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}, {
+			"path": "edit",
+			"style": {
+				"navigationBarTitleText": "编辑资料",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/mine/home-config",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "首页设置",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}, {
+		"root": "pages/mine/pwd",
+		"pages": [{
+			"path": "index",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				//#ifdef H5
+				"navigationStyle": "custom"
+				//#endif
+			}
+		}]
+	}],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/index",
+			"iconPath": "static/images/tabbar/home.png",
+			"selectedIconPath": "static/images/tabbar/home_.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/work/index",
+			"iconPath": "static/images/tabbar/work.png",
+			"selectedIconPath": "static/images/tabbar/work_.png",
+			"text": "工作台"
+		}, {
+			"pagePath": "pages/msg/index",
+			"iconPath": "static/images/tabbar/msg.png",
+			"selectedIconPath": "static/images/tabbar/msg_.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/mine/index",
+			"iconPath": "static/images/tabbar/mine.png",
+			"selectedIconPath": "static/images/tabbar/mine_.png",
+			"text": "我的"
+		}]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "@/components/thorui/thorui/tui-$1/tui-$1.vue",
+			"snowy-(.*)": "@/components/snowy/snowy-$1/snowy-$1.vue"
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
